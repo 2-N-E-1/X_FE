@@ -1,0 +1,9 @@
+ok you are making a website that handles DID(decentralized ID) first there needs to be an admin page and user page 
+
+on admin page if a person from certain corporation needs to make their own version of DID he can do it 
+
+and user can apply for that ceratin DID and get the qr code for it 
+
+
+
+
