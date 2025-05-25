@@ -38,9 +38,6 @@ const HomePage = () => {
                 {[
                   { name: '서비스 소개', path: '/service-info' },
                   { name: '솔루션', path: '/solution' },
-                  { name: '요금제', path: '/pricing' },
-                  { name: '고객사례', path: '/case-study' },
-                  { name: '지원', path: '/support' }
                 ].map((item, index) => (
                   <motion.div
                     key={item.name}
@@ -61,12 +58,12 @@ const HomePage = () => {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.8 }}
                 >
-                  <Link 
-                    href="/admin"
-                    className="text-blue-800 hover:text-blue-900 px-3 py-2 text-sm font-medium transition-colors duration-200"
-                  >
-                    관리자
-                  </Link>
+                                  <Link 
+                  href="/admin/login"
+                  className="text-blue-800 hover:text-blue-900 px-3 py-2 text-sm font-medium transition-colors duration-200"
+                >
+                  관리자 포탈 
+                </Link>
                 </motion.div>
               </div>
             </div>
@@ -129,7 +126,7 @@ const HomePage = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link 
-                    href="/admin" 
+                    href="/admin/login" 
                     className="inline-flex items-center px-8 py-4 border border-white text-lg font-medium rounded-md text-white hover:bg-white hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-white transition-all duration-200"
                   >
                     무료 체험하기
@@ -309,7 +306,7 @@ const HomePage = () => {
                   whileTap={{ scale: 0.95 }}
                 >
                   <Link 
-                    href="/admin" 
+                    href="/admin/login" 
                     className="inline-flex items-center px-8 py-4 border border-transparent text-lg font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-200"
                   >
                     무료 체험 시작하기
