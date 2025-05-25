@@ -3,6 +3,7 @@
 import React, { useEffect } from 'react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const DIDManagementSystem = () => {
   useEffect(() => {
@@ -23,10 +24,19 @@ const DIDManagementSystem = () => {
                 transition={{ duration: 0.5 }}
                 className="flex-shrink-0"
               >
-                <span className="text-2xl font-bold text-blue-800">DID 관리시스템</span>
+                <Link href="/" className="flex items-center space-x-2">
+        <Image
+                    src="/images/NexKey_logo.png"
+                    alt="NexKey"
+                    width={120}
+                    height={40}
+                    className="h-8 w-auto"
+          priority
+        />
+                  </Link>
               </motion.div>
               <div className="hidden sm:ml-8 sm:flex sm:space-x-8">
-                {['회사소개', '서비스 소개', '활용체계', '알림마당', '인재채용', '사회적 환경', '사업제휴'].map((item, index) => (
+                {['회사소개', '서비스 소개', '인재채용', '사회적 환경', '사업제휴'].map((item, index) => (
                   <motion.div
                     key={item}
                     initial={{ opacity: 0, y: -20 }}
@@ -85,11 +95,12 @@ const DIDManagementSystem = () => {
               className="md:w-1/2 mb-8 md:mb-0"
             >
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl mb-4">
-                DID 관리시스템
+                넥스키
               </h1>
               <p className="text-xl text-gray-200 max-w-3xl">
-                정보를 안전하게 보호하고, 신원은 간편하게 증명하는
-                가장 든든한 탈중앙화 신원증명 플랫폼
+                넥스키는 2022년 설립된 블록체인 기반 신원증명 서비스로, 
+                국내 최고의 보안 기술과 검증된 시스템을 바탕으로 
+                안전하고 신뢰할 수 있는 디지털 신원증명 서비스를 제공합니다.
               </p>
               <motion.div 
                 whileHover={{ scale: 1.05 }}
@@ -177,7 +188,7 @@ const DIDManagementSystem = () => {
             >
               <h2 className="text-2xl font-bold mb-6">투자 정보</h2>
               <p className="text-gray-300 mb-8">
-                DID 관리시스템은 2022년 설립된 블록체인 기반 신원증명 서비스로, 
+                넥스키는 2022년 설립된 블록체인 기반 신원증명 서비스로, 
                 국내 최고의 보안 기술과 검증된 시스템을 바탕으로 
                 안전하고 신뢰할 수 있는 디지털 신원증명 서비스를 제공합니다.
               </p>
@@ -220,7 +231,7 @@ const DIDManagementSystem = () => {
               <div>
                 <h2 className="text-2xl font-bold mb-6">정도 경영</h2>
                 <p className="text-gray-700 mb-4">
-                  DID 관리시스템은 투명한 경영을 추구합니다.
+                  넥스키는 투명한 경영을 추구합니다.
                   모든 이해관계자를 존중하며 정직과 신뢰를 바탕으로 합니다.
                 </p>
                 <motion.div 
@@ -238,9 +249,9 @@ const DIDManagementSystem = () => {
         {/* 세 번째 섹션: 비즈니스 및 서비스 */}
         <div className="bg-gray-50 py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <h2 className="text-3xl font-bold text-center mb-12">BUSINESS & SERVICE</h2>
+            <h2 className="text-3xl font-bold text-center mb-12">비즈니스 & 서비스</h2>
             <p className="text-center text-gray-700 max-w-3xl mx-auto mb-12">
-              DID 관리시스템은 국내 최대 신원정보 데이터베이스, 축적된 노하우, 우수한 전문인력 그리고 높은 시장인지도를 
+              넥스키는 국내 최대 신원정보 데이터베이스, 축적된 노하우, 우수한 전문인력 그리고 높은 시장인지도를 
               바탕으로 개인신원증명 및 기업신원증명 서비스를 제공하고 있습니다.
             </p>
             
@@ -259,7 +270,7 @@ const DIDManagementSystem = () => {
         <div className="bg-blue-900 text-white py-12">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <p className="text-xl text-center mb-8">
-              DID 관리시스템은 열정과 도전정신을 갖춘 인재들과의 소중한 인연을 기다립니다.
+              넥스키는 열정과 도전정신을 갖춘 인재들과의 소중한 인연을 기다립니다.
             </p>
             <div className="flex justify-center">
               <Link href="/recruitment" className="inline-flex items-center px-6 py-3 border border-white text-base font-medium rounded-md text-white hover:bg-blue-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
@@ -352,7 +363,7 @@ const DIDManagementSystem = () => {
               >
                 <p className="text-sm text-gray-400">서울특별시 영등포구 여의도동 123-45 | 대표전화: 02-1234-5678</p>
                 <p className="text-sm text-gray-400">대표: 홍길동 | 사업자등록번호: 123-45-67890 | 개인정보보호 책임자: 김철수 기술이사</p>
-                <p className="text-sm text-gray-400">Copyright © 2025 by DID MANAGEMENT SYSTEM All Rights Reserved.</p>
+                <p className="text-sm text-gray-400">Copyright © 2025 by 넥스키 All Rights Reserved.</p>
               </motion.div>
               <motion.div 
                 initial={{ opacity: 0, x: 20 }}
